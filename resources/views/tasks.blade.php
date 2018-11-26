@@ -1,10 +1,10 @@
 @extends('inc.header')
-@extends('inc.nav')
+{{-- @extends('inc.nav') --}}
 
 @section('title', 'My Tasks')
 
 @section('content')
-	<h2>Show all tasks</h2>
+	<tasks></tasks>
 	
 	<ul>
 	@foreach($tasks as $task)

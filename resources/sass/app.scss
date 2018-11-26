@@ -12,3 +12,25 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+/* Global Variables */
+	/* Main Colors */
+		$primary-color: #2983f9;
+	/* End of Main Colors */
+
+	/* Useful Variables */
+		$white: #FFF;
+	/* End of Useful Variables */
+
+/* End of Global Variables */
+
+/* Header */
+	header#navbar {
+		background: $primary-color;
+		margin: 0;
+		padding: 0;
+		a {
+			color: $white;
+		}
+	}
+/* End of Header */
