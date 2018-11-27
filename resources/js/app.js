@@ -30,6 +30,18 @@ Vue.component('Navbar', require('./components/Navbar.vue'));
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app'
+var app = new Vue({
+    el: '#app',
+    data: {
+    	tasks: ['Task 1', 'Task 2']
+    },
+    mounted() {
+    	document.querySelector('#new_task_btn').addEventListener('click', () => {
+    		var task = document.querySelector('#new_task');
+
+    		app.tasks.push(task.value);
+
+    		task.value = '';
+    	})
+    }
 });

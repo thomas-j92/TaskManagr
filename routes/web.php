@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/', 'PagesController@home');
+Route::get('/', 'PagesController@tasks');
 Route::get('/tasks', 'PagesController@tasks');

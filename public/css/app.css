@@ -10494,6 +10494,8 @@ header#navbar {
 
 header#navbar a {
   color: #FFF;
+  float: right;
+  background: none;
 }
 
 /* End of Header */
